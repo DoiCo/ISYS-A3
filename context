@@ -1,0 +1,183 @@
+Background
+Crédit Nationale Azur is a newly established French bank in Melbourne. Last year, they launched a campaign offering personal loans at very competitive rates to their customers, and about 15% of the customers approach took a personal loan. They now wish to launch a similar campaign. However, instead of blindly approaching all of their customers, they wish to use a more targeted approach to reduce the costs involved and increase their chances of success. In order to do so, they need to understand the characteristics of the customers who took the loan and, based on the characteristics, predict which customers are more likely to take personal loans.
+
+As a recent graduate of the BBus (Information Systems) program, you were hired as part of the graduate program of Crédit Nationale Azur, and since you have excellent analytics skills, you were posted to the data science team. Your team leader has assigned the personal loan project to you.
+
+The dataset for last year's promotional campaign is available to you. It has also been labelled in terms of who accepted or rejected personal loan offers made to them. A data dictionary describing the data items is also available.
+
+There are several ways to analyse the data; however, as an initial step, your brief is to use appropriate machine learning algorithms for creating a model for predicting which customers are likely to accept offers for a personal loan and identify the characteristics of these customers.
+
+At a high level, the deliverables for this project are:
+
+A technical report explaining and justifying the analysis and design decisions made during the various phases of this data science project, as well as the best practices used. (6%).
+Python code (in Jupyter Notebooks) used for all phases of the project. (30%)
+A business report presenting your findings and providing recommendations to the management of the bank. (4%).
+Data
+The dataset to be used for this assignment can be found here  Download hereand a data dictionary here Download here.
+
+Requirements
+You should follow an appropriate methodology when executing a data science project. A popular methodology is CRISP-DM, which is, although outdated, still useful. The phases of the methodology are: (1) Business Understanding,  (2) Data Understanding, (3) Data Preparation, (4) Modelling, (5) Evaluation and (6) Deployment. In this course, our focus is mainly on the first 5 phases, as we are not so much concerned with the deployment of models for operational purposes.
+
+Phase 1: Business Understanding
+
+In this phase of the project, you are required to understand the project objectives and their requirements from a business perspective. Once these requirements are clear, convert them to a data science problem definition and design a plan to achieve these business objectives.
+
+For the technical report, briefly explain what the problem is, how you will solve it, and why you think it will work. Write about 1/2 to 1 page for this section.
+
+For the business report, you need to explain the same things but in a more concise way (as you are limited to 1 or 2 slides) and in business terms.
+
+Phase 2: Data Understanding
+
+Next, you should familiarise yourself with the data required for the project.
+
+Note 1:  If the data does not exist yet, you should plan how to collect it. However, in the current situation, the data has already been collected and made available to you.
+
+You should perform exploratory data analysis (EDA) in a Jupyter notebook to explore the data to identify quality problems (e.g. missing data, outliers, etc), discover initial insights from the raw data and formulate hypotheses hidden in the data.
+
+Note 2: In order to be able to perform this step correctly, you will probably need to perform some data cleaning activities on the dataset. These data cleaning activities should be simple in nature, as their purpose is just to allow you to explore the data in its raw state. And, just to be clear, the data cleaning activities performed in the context of the Exploratory Data Analysis (EDA)  phase are independent of the data cleaning activities performed in the next (Data Preparation)  phase. That is, you might repeat the same data cleaning activities again or perform entirely different cleaning activities in the next phase of the project.
+
+For the technical report, explain what issues you found with the data, how you addressed them with proper justifications to be able to explore the data, how you explored the data to find any relationships between the attributes/features and the target variable, and formulated hypotheses, etc. Include interesting visualisations to support your hypotheses. Write about 1/2 to 1 page for this section.
+
+For the business report, the focus should be more on the insights you gained from the data (and supporting visualisations).
+
+Phase 3: Data Preparation
+
+Here, you are required to perform data cleaning activities in another Jupyter notebook to prepare the initial raw data (not the data that has already been manipulated for EDA) to transform it to a format that can be used for modelling purposes. For example, you might need to: handle missing data and outliers, select attributes, transform the data, etc.  The data cleaning notebook should dump the cleaned data as a pickled object.
+
+For the technical report, explain and justify how you addressed the quality issues (mainly missing values and outliers) for modelling purposes this time (not for exploration), how you selected attributes/features, and transformed the data for modelling (you might discuss transformations that were required in general here and more model-specific transformations in the modelling phase). Write about 1/2 to 1 page for this section.
+
+This section is more or less technical in nature and hence of not much interest to business executives. 
+
+Phase 4: Modelling
+
+Activities to be performed in this phase include: selecting and applying a range of machine learning models, hyperparameter tuning, etc.
+
+In this phase of the project, you are required to investigate two machine learning algorithms (logistic regression and naive bayes are not allowed) and for each algorithm write code in separate Jupyter notebooks to do the following:
+
+transform the pickled cleaned data (dumped by the data cleaning notebook) to suit the algorithm (as algorithms have specific requirements regarding the type of data inputs)
+Use all the features in the data set to build an initial model with default parameters
+compute performance metrics to evaluate the model
+tune the hyperparameters of the model in another notebook (or Python script)
+Use the tuned parameters to build an improved model and evaluate its performance again.
+You are also required to repeat the above-mentioned modelling steps with the same two models, and this time perform feature selection (in another notebook) and use a reduced set of features to do the modelling in two additional notebooks.
+
+For the technical report, explain and justify the modelling approach, the particular models used, the model-specific transformations performed, etc. Write about 1/2 to 1 page for this section.
+
+Again, this section is mainly of technical interest, so business executives would not be interested in these details.
+
+Phase 5: Evaluation
+
+In this final phase of the project (as far as we are concerned), the models should be thoroughly evaluated in order to select the best one that meets the required business objectives. You should review the steps executed to construct the models, check whether any important business aspect has been overlooked, in order to be able to make a recommendation regarding the best model for the business to use.
+
+For the technical report, explain and justify the procedure and the metrics used to evaluate the models from a technical perspective.
+
+For the business report, explain and justify the procedure and the metrics used to evaluate the models from a business perspective. You should be able to clearly explain to business executives how your proposed solution solves the problem, and since no solution is perfect, you should also discuss the limitations of your solution. Write about 1/2 to 1 page for this section.
+
+The difference between the technical and the business report is that in the technical report, we are evaluating the model on technical metrics, whereas in the business report, we are evaluating the solution in business terms.
+
+Best practices
+In your technical report, you are also required to discuss 5 best practices that you used in your assignment. This is similar to what you did in assignment 2, but in the context of the data science project. Write about 1 page for this section.
+
+Submission 
+The main deliverables for this assignment are:
+
+A technical report (in MS Word/PDF format - about 5 pages)  explaining and justifying the analysis and design decisions made and the best practices used throughout the 5 phases of the project (business understanding, data understanding, data preparation, modelling, evaluation). Write about half to one page per phase, to a maximum of 5 pages for all phases. Do not spend too much time going into lengthy descriptions of what you did; instead, summarise what you did and, very importantly, justify what you did. Your report should be professionally presented with a title page that includes the usual details (course, assignment, and student details) and the contents divided into sections with appropriate headings. Please note that the technical report will be checked with Turnitin for plagiarism detection.
+A zip file (not rar or 7z and definitely not a rar file renamed as a zip file) of all Jupyter notebooks, Python scripts, and data used.
+A business report (in PowerPoint/PDF format - about 10 slides) of the outcome of your modelling efforts. You should address the following topics:
+Problem statement,
+Insights from EDA,
+Evaluation of the best model, and
+Recommendations to management (at least 5).
+Although there might be some overlap between the technical and business reports, they should be written for different audiences in mind.  Again, do not just describe things; justify them. Prepare about 2 slides per topic, a maximum of 10 slides in all. Your report should be a professional presentation with a title slide that includes the usual details (course, assignment, and student details) and the contents divided into sections with appropriate headings. The business report should be devoid of technical jargon, Python code, variable names, algorithmic details, definition of terms and concepts, etc. Instead, it should be written in plain English so that a layperson can understand and be straight to the point i.e., no beating around the bush with sentences like “As you can see ..”, “I tried this ..”, “I tried that ..”, etc.
+
+Assignment 3: Data Science Project (1)
+Assignment 3: Data Science Project (1)
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcome1: Technical Report
+including, Business Understanding, Data Understanding, Data Preparation, Modelling, Evaluation and Best Practices.
+6 Pts
+HD
+The report has completed all requirements to a high standard
+4.79 Pts
+D
+The report has completed all requirements
+4.19 Pts
+C
+The report has completed the majority of the requirements
+3.59 Pts
+P
+The report has only completed half of the requirements
+2.99 Pts
+N
+Poor and/or largely incomplete
+6 pts
+This criterion is linked to a learning outcome2: Coding: EDA
+8 to >6.39 Pts
+HD
+The codebook has completed all requirements of the EDA to a high standard
+6.39 to >5.59 Pts
+D
+The codebook has completed all the requirements of the EDA
+5.59 to >4.79 Pts
+C
+The codebook has completed the majority of the requirements of the EDA
+4.79 to >3.99 Pts
+P
+The codebook only contains half of the requirements of the EDA
+3.99 to >0 Pts
+N
+Poor and/or largely incomplete
+8 pts
+This criterion is linked to a learning outcome3: Coding: Data Cleaning
+4 to >3.19 Pts
+HD
+The codebook has completed all requirements of the Data Cleaning to a high standard
+3.19 to >2.79 Pts
+D
+The codebook has completed all the requirements of the Data Cleaning
+2.79 to >2.39 Pts
+C
+The codebook has completed the majority of the requirements of the Data Cleaning
+2.39 to >1.99 Pts
+P
+The codebook only contains half of the requirements of the Data Cleaning
+1.99 to >0 Pts
+N
+Poor and/or largely incomplete
+4 pts
+This criterion is linked to a learning outcome4: Coding: Modelling (AoL#4A Digitally Adept)
+18 to >14.39 Pts
+HD
+The codebook has completed all requirements of the Modelling to a high standard
+14.39 to >12.59 Pts
+D
+The codebook has completed all the requirements of the Modelling
+12.59 to >10.79 Pts
+C
+The codebook has completed the majority of the requirements of the Modelling
+10.79 to >8.99 Pts
+P
+The codebook only contains half of the requirements of the Modelling
+8.99 to >0 Pts
+N
+Poor and/or largely incomplete
+18 pts
+This criterion is linked to a learning outcome5: Business Report (#AoL6 Critically Engaged)
+Including Problem Statement, Insights from EDA, Best Model Evaluation and Recommendations
+4 to >3.19 Pts
+HD
+The report has completed all requirements to a high standard
+3.19 to >2.79 Pts
+D
+The report has completed all requirements
+2.79 to >2.39 Pts
+C
+The report has completed the majority of the requirements
+2.39 to >1.99 Pts
+P
+The report has only completed half of the requirements
+1.99 to >0 Pts
+N
+Poor and/or largely incomplete
+4 pts
+Total points: 40
